@@ -1,0 +1,22 @@
+//
+//  CSchool.pch
+//  CSchool
+//
+//  Created by 左俊鑫 on 16/1/6.
+//  Copyright © 2016年 左俊鑫. All rights reserved.
+//
+
+#ifndef CSchool_pch
+#define CSchool_pch
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#import "Common/Common.h"
+
+#endif
+
+#endif /* CSchool_pch */

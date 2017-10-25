@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchoolCardBalanceViewController">
+            <connections>
+                <outlet property="balanceLabel" destination="SjL-wZ-hrG" id="fe3-Ro-b7g"/>
+                <outlet property="logoImageView" destination="hNW-dC-oxC" id="sld-5j-Hde"/>
+                <outlet property="mainScrollView" destination="WWL-ZQ-McT" id="5ed-Is-wiV"/>
+                <outlet property="nameLabel" destination="0Je-3W-6kD" id="vqD-VM-EoH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WWL-ZQ-McT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schoolLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-dC-oxC">
+                            <rect key="frame" x="137" y="39" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="ENv-cJ-Le4"/>
+                                <constraint firstAttribute="width" constant="100" id="ORZ-0J-6ED"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Je-3W-6kD">
+                            <rect key="frame" x="131" y="147" width="113" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="RU3-An-Ajh"/>
+                                <constraint firstAttribute="width" constant="113" id="w5C-OG-aF8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的一卡通余额为：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-pS-Ny3">
+                            <rect key="frame" x="86" y="173" width="203" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="nq6-ZZ-UNP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjL-wZ-hrG">
+                            <rect key="frame" x="86" y="200" width="203" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="pwF-zU-n8F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" red="1" green="0.16384182829999999" blue="0.037532275359999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhe-fv-w8A">
+                            <rect key="frame" x="47" y="353" width="280" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Cy0-42-OUg"/>
+                            </constraints>
+                            <state key="normal" title="支付宝一卡通充值说明"/>
+                            <connections>
+                                <action selector="alipayAction:" destination="-1" eventType="touchUpInside" id="Jd1-Dl-bWg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqG-gA-xmK">
+                            <rect key="frame" x="47" y="322" width="280" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="hB7-W1-DzK"/>
+                            </constraints>
+                            <state key="normal" title="微信一卡通充值说明"/>
+                            <connections>
+                                <action selector="weChatAction:" destination="-1" eventType="touchUpInside" id="DkJ-8f-lkb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qfx-pS-Ny3" firstAttribute="centerX" secondItem="WWL-ZQ-McT" secondAttribute="centerX" id="11V-AG-Zvz"/>
+                        <constraint firstAttribute="trailing" secondItem="SjL-wZ-hrG" secondAttribute="trailing" constant="86" id="1KM-nw-ttX"/>
+                        <constraint firstItem="Hhe-fv-w8A" firstAttribute="centerX" secondItem="qfx-pS-Ny3" secondAttribute="centerX" id="4Tq-JJ-69B"/>
+                        <constraint firstItem="SjL-wZ-hrG" firstAttribute="top" secondItem="qfx-pS-Ny3" secondAttribute="bottom" constant="6" id="AfP-GN-fOK"/>
+                        <constraint firstItem="qfx-pS-Ny3" firstAttribute="leading" secondItem="SjL-wZ-hrG" secondAttribute="leading" id="BZB-YJ-YKP"/>
+                        <constraint firstItem="Hhe-fv-w8A" firstAttribute="leading" secondItem="WWL-ZQ-McT" secondAttribute="leading" constant="47" id="Epd-34-Lvy"/>
+                        <constraint firstItem="pqG-gA-xmK" firstAttribute="centerX" secondItem="WWL-ZQ-McT" secondAttribute="centerX" id="Grr-Qm-XHL"/>
+                        <constraint firstItem="hNW-dC-oxC" firstAttribute="centerX" secondItem="WWL-ZQ-McT" secondAttribute="centerX" id="NIA-r1-oNh"/>
+                        <constraint firstItem="0Je-3W-6kD" firstAttribute="top" secondItem="hNW-dC-oxC" secondAttribute="bottom" constant="8" id="Vjn-35-hhy"/>
+                        <constraint firstItem="pqG-gA-xmK" firstAttribute="top" secondItem="SjL-wZ-hrG" secondAttribute="bottom" constant="101" id="X1Z-YK-dHn"/>
+                        <constraint firstItem="pqG-gA-xmK" firstAttribute="centerX" secondItem="qfx-pS-Ny3" secondAttribute="centerX" id="Yoq-aA-RLC"/>
+                        <constraint firstItem="SjL-wZ-hrG" firstAttribute="centerX" secondItem="qfx-pS-Ny3" secondAttribute="centerX" id="aOM-5X-lgj"/>
+                        <constraint firstItem="SjL-wZ-hrG" firstAttribute="leading" secondItem="WWL-ZQ-McT" secondAttribute="leading" constant="86" id="bCm-NZ-EzP"/>
+                        <constraint firstAttribute="trailing" secondItem="pqG-gA-xmK" secondAttribute="trailing" constant="48" id="bRE-vk-zWY"/>
+                        <constraint firstAttribute="trailing" secondItem="Hhe-fv-w8A" secondAttribute="trailing" constant="48" id="fGb-rl-Fy9"/>
+                        <constraint firstItem="pqG-gA-xmK" firstAttribute="leading" secondItem="WWL-ZQ-McT" secondAttribute="leading" constant="47" id="gPJ-lx-xXa"/>
+                        <constraint firstItem="0Je-3W-6kD" firstAttribute="centerX" secondItem="WWL-ZQ-McT" secondAttribute="centerX" id="hKa-7u-nQn"/>
+                        <constraint firstItem="Hhe-fv-w8A" firstAttribute="centerX" secondItem="WWL-ZQ-McT" secondAttribute="centerX" id="kG5-Le-2vI"/>
+                        <constraint firstItem="qfx-pS-Ny3" firstAttribute="top" secondItem="0Je-3W-6kD" secondAttribute="bottom" constant="5" id="pOe-vd-BOR"/>
+                        <constraint firstItem="Hhe-fv-w8A" firstAttribute="top" secondItem="pqG-gA-xmK" secondAttribute="bottom" constant="1" id="rVf-Ws-kFk"/>
+                        <constraint firstItem="hNW-dC-oxC" firstAttribute="top" secondItem="WWL-ZQ-McT" secondAttribute="top" constant="39" id="soI-Xw-YJh"/>
+                        <constraint firstItem="SjL-wZ-hrG" firstAttribute="centerX" secondItem="WWL-ZQ-McT" secondAttribute="centerX" id="yJ1-Yh-7Ec"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="11V-AG-Zvz"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本数据仅供参考，实际余额请询官方数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIo-CS-duG">
+                    <rect key="frame" x="27" y="638" width="320" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="nZh-fQ-kWm"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="viA-o2-7EG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YIo-CS-duG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="8GR-MX-nGu"/>
+                <constraint firstItem="WWL-ZQ-McT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K8x-jp-xLk"/>
+                <constraint firstAttribute="trailing" secondItem="WWL-ZQ-McT" secondAttribute="trailing" id="MAo-Xq-eC6"/>
+                <constraint firstAttribute="bottom" secondItem="WWL-ZQ-McT" secondAttribute="bottom" id="Nz3-Pa-ObB"/>
+                <constraint firstAttribute="bottom" secondItem="YIo-CS-duG" secondAttribute="bottom" constant="8" id="Td2-nn-ADp"/>
+                <constraint firstAttribute="trailing" secondItem="YIo-CS-duG" secondAttribute="trailing" constant="28" id="bgZ-uW-Kp9"/>
+                <constraint firstItem="WWL-ZQ-McT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="urz-ga-924"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="383.5" y="388.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="schoolLogo" width="180" height="180"/>
+    </resources>
+</document>

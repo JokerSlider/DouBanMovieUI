@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpDetailViewController">
+            <connections>
+                <outlet property="contentTextView" destination="IYH-0c-vZQ" id="M4v-lG-fou"/>
+                <outlet property="titleLabel" destination="TPg-mG-eS4" id="hLY-M1-14H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPg-mG-eS4">
+                    <rect key="frame" x="8" y="100" width="359" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lhW-hD-iFH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IYH-0c-vZQ">
+                    <rect key="frame" x="8" y="129" width="359" height="530"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="0.65000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IYH-0c-vZQ" secondAttribute="trailing" constant="8" id="C7m-eB-HWk"/>
+                <constraint firstItem="TPg-mG-eS4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Eyy-xQ-PFs"/>
+                <constraint firstItem="IYH-0c-vZQ" firstAttribute="top" secondItem="TPg-mG-eS4" secondAttribute="bottom" constant="8" id="MqZ-Sn-Any"/>
+                <constraint firstAttribute="bottom" secondItem="IYH-0c-vZQ" secondAttribute="bottom" constant="8" id="SDR-KQ-hMn"/>
+                <constraint firstItem="TPg-mG-eS4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Udj-ef-RNd"/>
+                <constraint firstItem="IYH-0c-vZQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="c8m-Lg-sfF"/>
+                <constraint firstAttribute="trailing" secondItem="TPg-mG-eS4" secondAttribute="trailing" constant="8" id="ztT-O8-o7h"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="196.5" y="224.5"/>
+        </view>
+    </objects>
+</document>
