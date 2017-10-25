@@ -121,7 +121,7 @@
         NSString *minorSix = [self getHexByDecimal:[minor integerValue]];
 
         NSMutableDictionary *dic  = [NSMutableDictionary dictionary];
-        [dic setValue:@"201511101102" forKey:@"userid"];
+        [dic setValue:@"" forKey:@"userid"];
         [dic setValue:UUIDString forKey:@"uuid"];
         [dic setValue:majorSix forKey:@"major"];
         [dic setValue:minorSix forKey:@"minor"];
