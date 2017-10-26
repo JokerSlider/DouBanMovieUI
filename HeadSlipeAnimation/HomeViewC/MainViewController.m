@@ -580,9 +580,9 @@ static CGFloat headViewHeight = 160.f;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self uploadMessageFromDic:self.locationModel];
-    //r
-    return;
+//    [self uploadMessageFromDic:self.locationModel];
+//    //r
+//    return;
     HomeMainModel *model = _modelArr[indexPath.row];
     NSLog(@"%@",model)
     MovieInfoViewController *vc = [MovieInfoViewController new];
